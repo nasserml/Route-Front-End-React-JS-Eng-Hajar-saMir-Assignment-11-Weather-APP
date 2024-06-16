@@ -1,0 +1,623 @@
+/* Global CSS rules==================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto","Open Sans", sans-serif;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-color{
+    color: rgb(0, 154, 216);
+}
+
+.roboto-font{
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/* nav bar style css rules ============= */
+#navbar{
+    background-color: #1E202B;
+}
+
+.weather-logo{
+    /* background-color: turquoise; */
+}
+
+.weather-links{
+    /* background-color: greenyellow; */
+}
+
+
+.weather-links ul li{
+    /* background-color: gold; */
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0  15px;
+}
+
+.navbar{
+    padding: 50px 0;
+}
+
+.weather-logo{
+    display: flex;
+}
+
+.weather-logo-image{
+    margin-right: 10px;
+}
+.weather-logo .weather-logo-image img{
+    width: 100%;
+    
+}
+.weather-logo-caption h1{
+    color: white;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.weather-logo-caption small{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 300;
+    color: rgb(191, 193, 200);
+}
+
+
+.weather-links ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.weather-links ul li{
+    margin-left: 10px;
+}
+
+.weather-links ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: white;
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: border 0.4s ease, color 0.4s ease;
+}
+
+.weather-links ul li a:hover{
+    color: rgb(0, 154, 216);
+    border-color: rgb(0, 154, 216);
+}
+
+
+.weather-links ul li a.home-li{
+    color: rgb(0, 154, 216);
+    border-color: rgb(0, 154, 216);
+}
+
+.weather-links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+#toggle{
+    background: none;
+    border: 2px solid transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    transition: color 0.4s ease;
+    vertical-align: middle;
+    overflow: hidden;
+    display: none;
+    outline: none;
+    transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+
+
+
+
+.wether-links-max-width-990px{
+    margin-top: 30px;
+    border-radius: 10px; 
+    text-align: center;
+    background-color: #262936;
+    flex-basis: 100%;
+    
+
+}
+
+.wether-links-max-width-990px ul{ 
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wether-links-max-width-990px ul li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+}
+
+.wether-links-max-width-990px ul li a{
+    padding:  20px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.wether-links-max-width-990px ul li a.home-color{
+    color: rgb(0, 154, 216);
+}
+
+.display-block{
+    display: block;
+}
+.display-none{
+
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* Weatther Search Background CSS Rules */
+
+
+
+
+
+
+
+
+
+
+#weather-background-search{
+    background-image: url("../images/banner.png");
+    min-height: 350px;
+    padding: 70px 0px;
+}
+
+
+.weather-search-input{
+    /* background-color: gold; */
+    margin-bottom: 70px;
+    position: relative;
+    
+}
+
+#weatherSearch{
+    padding: 20px 50px 20px 20px;
+    width: 100%;
+    height: 60px;
+    background-color: #1E202B;
+    border: none;
+    outline: none;
+    border-radius: 300px;
+    color: white;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+
+
+
+
+#searchButton{
+    position: absolute;
+    padding: 0 40px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background-color: #009ad8;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+
+}
+
+
+
+
+body{
+    background-color: #1E202B;
+}
+
+
+/* Weathe information CSS Rules ================= */
+#weatherInformation{
+    /* background-color: #1E202B; */
+}
+
+.weather-information-box{
+    /* background-color: darkblue; */
+}
+
+.weather-information-today {
+    background-color: #323544;
+}
+
+.weather-information-tomorrow .weather-information-body{
+    background-color: #262936;
+}
+
+
+.weather-information-tomorrow{
+    background-color: #262936;
+}
+
+
+.weather-information-overmorrow{
+    background-color: #323544;
+}
+
+.weather-information-header{
+    background-color: tomato;
+}
+
+.weather-information-body{
+    background-color: #323544;
+}
+
+.weather-information-body-footer{
+    background-color: #323544;
+}
+
+
+
+.weather-information-box{
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+}
+
+.weather-information-box > div{
+    width: 33.33%;
+}
+
+
+
+.weather-information-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+
+.weather-information-header{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(191,193,200);
+    text-size-adjust: 100%;
+
+}
+.weather-information-body{
+    padding: 30px 20px;
+}
+.weather-information-today .city{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: rgb(191, 193, 200);
+}
+
+.weather-information-body .degree-box h3{
+    font-size: 90px;
+    line-height: 135px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-right: 30px;
+
+}
+
+
+.weather-information-body .degree-box h3 span{
+    font-size: 68px;
+    line-height: 0px;
+    position: relative;
+    bottom: 35px;
+}
+
+
+.weather-information-today .weather-information-body .degree-box img{
+   width: 90px;
+}
+
+.weather-type{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: rgb(0, 154, 216);
+}
+
+.weather-information-today .weather-information-body .weather-type {
+    margin: 20px 0px;
+}
+
+.weather-information-today .weather-information-body .weather-information-body-footer {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: rgb(191, 193, 200);
+}
+.weather-information-today .weather-information-body .weather-information-body-footer span{
+    margin-right: 20px;
+}
+
+.weather-information-today .weather-information-body .weather-information-body-footer img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+
+.weather-information-tomorrow .weather-information-body,
+.weather-information-overmorrow .weather-information-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+
+.weather-information-tomorrow .weather-information-body .degree-box img,
+.weather-information-overmorrow .weather-information-body .degree-box img{
+    width: 48px;
+    margin-bottom: 20px;
+}
+
+.weather-information-tomorrow .weather-information-body .degree-box h4,
+.weather-information-overmorrow .weather-information-body .degree-box h4{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+.weather-information-tomorrow .weather-information-body .degree-box small,
+.weather-information-overmorrow .weather-information-body .degree-box small{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: rgb(191, 193, 200);
+}
+
+
+
+
+.weather-information-tomorrow .weather-information-body .weather-type,
+.weather-information-overmorrow .weather-information-body .weather-type{
+    margin: 20px 0px;
+}
+
+
+.weather-information-tomorrow .weather-information-body .degree-box h4 span,
+.weather-information-overmorrow .weather-information-body .degree-box h4 span{
+    font-size: 18px;
+    line-height: 0;
+    font-weight: 700;
+    position: relative;
+    top: -0.5em;
+}
+
+
+.weather-information-tomorrow .weather-information-body .degree-box small span,
+.weather-information-overmorrow .weather-information-body .degree-box small span{
+    font-size: 12px;
+    line-height: 0;
+    font-weight: 300;
+    position: relative;
+    top: -0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Weather Footer CSS Rules ======================= */
+
+#weatherFooter{
+    background-color: #262936;
+    padding: 50px 0px;
+}
+
+.email-subscribe-social-icons{
+    /* background-color: pink; */
+}
+
+.email-subscribe{
+    /* background-color: tan; */
+}
+
+.social-icons{
+    /* background-color: gold; */
+}
+
+.footer-copy-right{
+    /* background-color: tomato; */
+}
+
+
+
+.email-subscribe-social-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-subscribe{
+    width: 66%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.social-icons{
+    width: 20%;
+}
+
+#emailInput{
+    padding: 20px;
+    padding-right: 100px;
+    width: 100%;
+    height: 60px;
+    background-color: #1E202B;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+#subscribeButton{
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #009AD8;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+
+.social-icons{
+    margin-bottom: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #009ad8;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #1e202b;
+    font-size: 20px;
+    font-weight: 300;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #009AD8;
+
+}
+
+.social-icons a i{
+
+    margin-top: 20px;
+    transform: translateY(-50%);
+}
+
+
+.footer-copy-right{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: rgb(191, 193, 200);
+    margin-bottom: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+
+
+
+@media screen and (max-width: 990px){
+    #toggle{
+        display: inline-block;
+    }
+
+    .weather-links ul {
+        display: none;
+    }
+
+    #toggle:hover{
+        color: rgb(0, 154, 216);
+        border-color: rgb(0, 154, 216);
+        cursor: pointer;
+    }
+
+    .navbar .container{
+        flex-wrap: wrap;
+    }
+
+    .weather-information-box > div{
+        width: 100%;
+    }
+
+
+    .email-subscribe-social-icons {
+        flex-direction: column;
+    }
+
+    .email-subscribe{
+        width: 100%;
+    }
+
+    .social-icons{
+        width: 100%;
+    }
+
+}
